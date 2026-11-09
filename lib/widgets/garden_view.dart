@@ -1,6 +1,5 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import '../data/gardens.dart';
 import 'garden_effects.dart';
 import 'sprites.dart';
@@ -98,20 +97,17 @@ class _GardenViewState extends State<GardenView> with TickerProviderStateMixin {
         background: background,
       );
 
-  Widget _svg(String s, double w, double h, {BoxFit fit = BoxFit.contain}) =>
-      SvgPicture.string(s, width: w, height: h, fit: fit);
-
   Widget _celestial(GardenTheme th, double w, double h) {
     switch (th.time) {
       case Daytime.day:
         final s = w * .38;
-        return Positioned(left: w * .8 - s / 2, top: h * .16 - s / 2, child: _svg(Sprites.raw('sun'), s, s));
+        return Positioned(left: w * .8 - s / 2, top: h * .16 - s / 2, child: Sprites.widget('sun', width: s, height: s));
       case Daytime.sunset:
         final s = w * .56;
-        return Positioned(left: w * .5 - s / 2, top: h * .42 - s / 2, child: _svg(Sprites.raw('sun'), s, s));
+        return Positioned(left: w * .5 - s / 2, top: h * .42 - s / 2, child: Sprites.widget('sun', width: s, height: s));
       case Daytime.night:
         final s = w * .36;
-        return Positioned(left: w * .78 - s / 2, top: h * .15 - s / 2, child: _svg(Sprites.raw('moon'), s, s));
+        return Positioned(left: w * .78 - s / 2, top: h * .15 - s / 2, child: Sprites.widget('moon', width: s, height: s));
     }
   }
 
@@ -121,21 +117,23 @@ class _GardenViewState extends State<GardenView> with TickerProviderStateMixin {
     return Positioned(
       left: x,
       top: h * (.06 + i * .075),
-      child: Opacity(opacity: opacity, child: _svg(Sprites.raw('cloud'), cw, cw / 2)),
+      child: Opacity(opacity: opacity, child: Sprites.widget('cloud', width: cw, height: cw / 2)),
     );
   }
 
   Widget _hills({required bool back, required Color color, required double top, required double dx, required double w, required double h}) {
     final ww = w + 48;
-    final hh = ww / 4; // viewBox 400×100
+    // Пропорции файла (400×100), но не выше 60% доступного места,
+    // иначе на широком экране холм не влезает.
+    final hh = min(Sprites.heightFor('hills_back', ww), (h - top) * .6);
     return Positioned(
       left: -24 + dx,
       top: top,
       width: ww,
-      height: h - top,
+      height: h - top + 4, // с запасом вниз, чтобы не было щели на стыке со сценой
       child: Column(children: [
-        _svg(Sprites.hills(back: back, color: color), ww, hh, fit: BoxFit.fill),
-        Expanded(child: Transform.translate(offset: const Offset(0, -1), child: ColoredBox(color: color, child: const SizedBox.expand()))),
+        Sprites.widget(back ? 'hills_back' : 'hills_front', width: ww, height: hh, fit: BoxFit.fill, color: color),
+        Expanded(child: ColoredBox(color: color, child: const SizedBox.expand())),
       ]),
     );
   }
@@ -154,7 +152,6 @@ class _GardenViewState extends State<GardenView> with TickerProviderStateMixin {
       scale = .55 + .45 * Curves.elasticOut.transform(local);
     }
     final file = Sprites.fileFor(it.kind, state);
-    final svg = Sprites.svgFor(it.kind, state, it.color);
 
     // Трава и ручей тянутся на всю ширину сцены.
     if (it.kind == ItemKind.grass && state == 3 || it.kind == ItemKind.stream && state == 3) {
@@ -167,7 +164,7 @@ class _GardenViewState extends State<GardenView> with TickerProviderStateMixin {
         child: Transform.scale(
           scale: scale,
           alignment: Alignment.bottomCenter,
-          child: _svg(svg, sw, sh, fit: BoxFit.fill),
+          child: Sprites.widget(file, width: sw, height: sh, fit: BoxFit.fill, color: it.color),
         ),
       );
     }
@@ -193,7 +190,7 @@ class _GardenViewState extends State<GardenView> with TickerProviderStateMixin {
         transform: Matrix4.identity()
           ..scaleByDouble(scale, scale, 1, 1)
           ..rotateZ(angle),
-        child: _svg(svg, sw, sh),
+        child: Sprites.widget(file, width: sw, height: sh, color: it.color),
       ),
     );
   }
