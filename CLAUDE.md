@@ -61,6 +61,8 @@ flutter build web --release --no-web-resources-cdn   # демо для пока�
 ```
 Демо-чит: долгое нажатие на серую подпись внизу главного экрана даёт +500 капель
 (`GameState.demoBonus`). Убрать перед релизом.
+Демо-режим тапов: `debugDisableTapGuard = true` в `lib/logic/tap_guard.dart` выключает лимит
+скорости и детектор автотапера (по просьбе Qazaq, 2026-11-09). Перед релизом вернуть `false`.
 
 ## Техрешения
 - Flutter stable 3.47, Dart 3.13. Пакеты: `shared_preferences`, `flutter_animate`, `flutter_svg`.

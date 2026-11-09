@@ -1,5 +1,9 @@
 import 'dart:math';
 
+/// ВРЕМЕННО для демо: true — лимит скорости и детектор автотапера выключены,
+/// любой тап засчитывается. Перед релизом обязательно вернуть false.
+const bool debugDisableTapGuard = true;
+
 /// Результат проверки одного тапа.
 enum TapResult { counted, tooFast, suspicious }
 
@@ -9,8 +13,10 @@ enum TapResult { counted, tooFast, suspicious }
 ///    точку экрана, это похоже на автотапер: счёт ставится на паузу,
 ///    пока человек не подтвердит, что он здесь.
 class TapGuard {
-  TapGuard({this.window = 25, this.rhythmJitterMs = 12, this.positionJitterPx = 2});
+  TapGuard({this.window = 25, this.rhythmJitterMs = 12, this.positionJitterPx = 2, this.enabled = !debugDisableTapGuard});
 
+  /// false — защита отключена (см. [debugDisableTapGuard]). Тесты передают true явно.
+  final bool enabled;
   final int window;
   final double rhythmJitterMs;
   final double positionJitterPx;
@@ -21,6 +27,7 @@ class TapGuard {
   bool locked = false;
 
   TapResult tap({required int nowMs, required Point<double> pos, required int minIntervalMs}) {
+    if (!enabled) return TapResult.counted;
     if (locked) return TapResult.suspicious;
     if (_lastCounted != null && nowMs - _lastCounted! < minIntervalMs) {
       return TapResult.tooFast;
