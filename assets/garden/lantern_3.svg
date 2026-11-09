@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 120">
+<defs>
+<linearGradient id="post" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7A4B2A"/><stop offset="1" stop-color="#4A2A14"/></linearGradient>
+<radialGradient id="glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FFF3B0"/><stop offset=".55" stop-color="#FFE082"/><stop offset="1" stop-color="#FFE082"/></radialGradient>
+<linearGradient id="gl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF7C2"/><stop offset="1" stop-color="#FFC107"/></linearGradient>
+</defs>
+<ellipse cx="30" cy="118" rx="16" ry="4" fill="#000" opacity="0.16"/>
+<circle cx="30" cy="48" r="28" fill="url(#glow)" opacity=".55"/>
+<rect x="26" y="40" width="8" height="76" rx="4" fill="url(#post)"/>
+<ellipse cx="30" cy="116" rx="12" ry="4" fill="#4A2A14"/>
+<path d="M16 40 L30 26 L44 40 Z" fill="#5E3417"/>
+<rect x="19" y="40" width="22" height="26" rx="5" fill="#5E3417"/>
+<rect x="23" y="43" width="14" height="20" rx="3" fill="url(#gl)"/>
+<rect x="25" y="45" width="4" height="10" rx="2" fill="#fff" opacity=".6"/>
+<circle cx="30" cy="24" r="3" fill="#FFC23F"/>
+
+</svg>

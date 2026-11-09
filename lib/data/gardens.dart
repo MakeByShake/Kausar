@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// Что можно вырастить в саду. Рисуется в widgets/garden_painter.dart.
+/// Что можно вырастить в саду. Спрайты — assets/garden/, см. widgets/sprites.dart.
 enum ItemKind { grass, flower, bush, tree, palm, stream, fountain, pavilion, lantern, bridge, dome }
 
 class GardenItem {
@@ -16,11 +16,15 @@ class GardenItem {
       {this.scale = 1, this.color = const Color(0xFFFF6FB1)});
 }
 
+/// Время суток: решает, солнце или луна, искорки или звёзды.
+enum Daytime { day, sunset, night }
+
 class GardenTheme {
   final List<Color> sky;
   final Color hillBack;
   final Color hillFront;
-  const GardenTheme(this.sky, this.hillBack, this.hillFront);
+  final Daytime time;
+  const GardenTheme(this.sky, this.hillBack, this.hillFront, {this.time = Daytime.day});
 }
 
 class Garden {
@@ -61,7 +65,7 @@ final gardens = <Garden>[
   ),
   Garden(
     'g2', 'Финиковый оазис', 'Құрма оазисі',
-    const GardenTheme([Color(0xFFFFB86B), Color(0xFFFFE7B8)], Color(0xFFF2C46D), Color(0xFF7FCB5C)),
+    const GardenTheme([Color(0xFFFF8E6B), Color(0xFFFFC27A), Color(0xFFFFE7B8)], Color(0xFFE8B86A), Color(0xFF86CC5C), time: Daytime.sunset),
     [
       const GardenItem('g2_grass', ItemKind.grass, 'Трава', 'Шөп', 30, Offset(.5, .8)),
       const GardenItem('g2_palm1', ItemKind.palm, 'Пальма', 'Құрма ағашы', 200, Offset(.15, .6)),
@@ -78,7 +82,7 @@ final gardens = <Garden>[
   ),
   Garden(
     'g3', 'Река Каусар', 'Кәусар өзені',
-    const GardenTheme([Color(0xFF8A7BFF), Color(0xFFFFC6E6)], Color(0xFF7AD9B8), Color(0xFF39B98A)),
+    const GardenTheme([Color(0xFF1B1A4E), Color(0xFF5B4BC4), Color(0xFFE98BC0)], Color(0xFF4FB596), Color(0xFF2F9F78), time: Daytime.night),
     [
       const GardenItem('g3_grass', ItemKind.grass, 'Трава', 'Шөп', 40, Offset(.5, .8)),
       const GardenItem('g3_stream', ItemKind.stream, 'Река', 'Өзен', 300, Offset(.5, .76)),

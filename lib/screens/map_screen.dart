@@ -4,12 +4,14 @@ import 'package:flutter_animate/flutter_animate.dart';
 import '../data/gardens.dart';
 import '../l10n/strings.dart';
 import '../main.dart';
+import '../widgets/sprites.dart';
 
 /// Карта садов: тропинка, по которой открываются сады один за другим.
 class MapScreen extends StatelessWidget {
   const MapScreen({super.key});
 
-  static const _icons = ['🌳', '🌴', '🏞', '🌸', '⛲', '🕌'];
+  static const _kinds = [ItemKind.tree, ItemKind.palm, ItemKind.dome];
+  static const _soonIcons = ['🌸', '⛲', '🕌'];
   static const _soonRu = ['Сад цветов', 'Сад фонтанов', 'Дворец Фирдаус'];
   static const _soonKz = ['Гүлдер бағы', 'Субұрқақтар бағы', 'Фирдаус сарайы'];
 
@@ -65,7 +67,11 @@ class MapScreen extends StatelessWidget {
         border: Border.all(color: Colors.white, width: current ? 6 : 4),
         boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: .25), offset: const Offset(0, 6))],
       ),
-      child: Text(unlocked ? _icons[i] : '🔒', style: const TextStyle(fontSize: 40)),
+      child: !unlocked
+          ? const Text('🔒', style: TextStyle(fontSize: 40))
+          : real
+              ? Padding(padding: const EdgeInsets.only(top: 6), child: Sprite(kind: _kinds[i % _kinds.length], width: 64))
+              : Text(_soonIcons[(i - gardens.length) % _soonIcons.length], style: const TextStyle(fontSize: 40)),
     );
     if (current) {
       circle = circle.animate(onPlay: (c) => c.repeat(reverse: true)).scaleXY(begin: 1, end: 1.08, duration: 900.ms);

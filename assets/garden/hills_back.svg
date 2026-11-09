@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+<defs>
+</defs>
+<path d="M0 40 C60 10 120 60 200 30 C280 0 340 50 400 24 L400 100 L0 100 Z" fill="#4CC85A"/>
+<path d="M0 40 C60 10 120 60 200 30 C280 0 340 50 400 24 L400 36 C340 62 280 14 200 42 C120 72 60 24 0 52 Z" fill="#fff" opacity=".22"/>
+
+</svg>

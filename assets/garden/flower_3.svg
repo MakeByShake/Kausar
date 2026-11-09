@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<defs>
+<linearGradient id="leaf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9BF27F"/><stop offset="1" stop-color="#1F8F3A"/></linearGradient>
+<radialGradient id="petal" cx="0.38" cy="0.32" r="0.8"><stop offset="0" stop-color="#FFA8D1"/><stop offset=".55" stop-color="#FF6FB1"/><stop offset="1" stop-color="#C9407F"/></radialGradient>
+<radialGradient id="core" cx="0.38" cy="0.32" r="0.8"><stop offset="0" stop-color="#FFF3B0"/><stop offset=".55" stop-color="#FFD23F"/><stop offset="1" stop-color="#E09A00"/></radialGradient>
+</defs>
+<ellipse cx="50" cy="95" rx="22" ry="6.6" fill="#000" opacity="0.16"/>
+<path d="M50 94 Q48 72 50 50" stroke="#2E9E44" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+<path d="M50 80 C40 82 30 76 28 66 C40 64 50 70 50 80 Z" fill="url(#leaf)"/>
+<path d="M50 72 C60 74 70 68 72 58 C60 56 50 62 50 72 Z" fill="url(#leaf)"/>
+<circle cx="50.0" cy="25.0" r="12" fill="url(#petal)"/>
+<circle cx="63.0" cy="32.5" r="12" fill="url(#petal)"/>
+<circle cx="63.0" cy="47.5" r="12" fill="url(#petal)"/>
+<circle cx="50.0" cy="55.0" r="12" fill="url(#petal)"/>
+<circle cx="37.0" cy="47.5" r="12" fill="url(#petal)"/>
+<circle cx="37.0" cy="32.5" r="12" fill="url(#petal)"/>
+<ellipse cx="50.0" cy="20.0" rx="4.5" ry="2.5" fill="#fff" opacity="0.4" transform="rotate(-20 50.0 20.0)"/>
+<ellipse cx="64.7" cy="28.5" rx="4.5" ry="2.5" fill="#fff" opacity="0.4" transform="rotate(-20 64.7 28.5)"/>
+<ellipse cx="64.7" cy="45.5" rx="4.5" ry="2.5" fill="#fff" opacity="0.4" transform="rotate(-20 64.7 45.5)"/>
+<ellipse cx="50.0" cy="54.0" rx="4.5" ry="2.5" fill="#fff" opacity="0.4" transform="rotate(-20 50.0 54.0)"/>
+<ellipse cx="35.3" cy="45.5" rx="4.5" ry="2.5" fill="#fff" opacity="0.4" transform="rotate(-20 35.3 45.5)"/>
+<ellipse cx="35.3" cy="28.5" rx="4.5" ry="2.5" fill="#fff" opacity="0.4" transform="rotate(-20 35.3 28.5)"/>
+<circle cx="50" cy="40" r="9" fill="url(#core)"/>
+<ellipse cx="47" cy="36" rx="3.5" ry="2" fill="#fff" opacity="0.6" transform="rotate(-30 47 36)"/>
+
+</svg>

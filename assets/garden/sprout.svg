@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<defs>
+<radialGradient id="soil" cx="0.38" cy="0.32" r="0.8"><stop offset="0" stop-color="#C98E55"/><stop offset=".55" stop-color="#8E5A2E"/><stop offset="1" stop-color="#5E3417"/></radialGradient>
+<linearGradient id="leaf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9BF27F"/><stop offset="1" stop-color="#1F8F3A"/></linearGradient>
+</defs>
+<ellipse cx="50" cy="93" rx="30" ry="9.0" fill="#000" opacity="0.16"/>
+<ellipse cx="50" cy="86" rx="22" ry="9" fill="url(#soil)"/>
+<path d="M50 84 Q50 70 50 58" stroke="#2E9E44" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M50 66 C38 68 26 60 24 46 C38 44 50 52 50 66 Z" fill="url(#leaf)"/>
+<path d="M50 60 C62 62 74 54 76 40 C62 38 50 46 50 60 Z" fill="url(#leaf)"/>
+<path d="M30 52 Q40 54 48 62" stroke="#fff" stroke-opacity=".5" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M70 46 Q60 48 52 56" stroke="#fff" stroke-opacity=".5" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+</svg>

@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'screens/home_screen.dart';
 import 'state/game_state.dart';
+import 'widgets/sprites.dart';
 
 final game = GameState();
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await game.load();
+  await Future.wait([game.load(), Sprites.preload()]);
   runApp(const KausarApp());
 }
 

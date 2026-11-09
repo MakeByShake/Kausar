@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 120">
+<defs>
+<linearGradient id="post" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7A4B2A"/><stop offset="1" stop-color="#4A2A14"/></linearGradient>
+<radialGradient id="glow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FFF3B0"/><stop offset=".55" stop-color="#FFE082"/><stop offset="1" stop-color="#FFE082"/></radialGradient>
+<linearGradient id="gl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF7C2"/><stop offset="1" stop-color="#FFC107"/></linearGradient>
+</defs>
+<ellipse cx="30" cy="118" rx="16" ry="4" fill="#000" opacity="0.16"/>
+<rect x="26" y="40" width="8" height="76" rx="4" fill="url(#post)"/>
+<ellipse cx="30" cy="116" rx="12" ry="4" fill="#4A2A14"/>
+<path d="M18 40 L30 28 L42 40 Z" fill="#5E3417"/>
+<rect x="20" y="40" width="20" height="24" rx="4" fill="#4A2A14"/>
+<rect x="24" y="44" width="12" height="16" rx="2" fill="#8FA3B5" opacity=".7"/>
+
+</svg>

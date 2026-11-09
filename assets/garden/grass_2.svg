@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 40">
+<defs>
+<linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8CEB72"/><stop offset="1" stop-color="#2FA84A"/></linearGradient>
+<linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5CD36E"/><stop offset="1" stop-color="#1F8F3A"/></linearGradient>
+</defs>
+<path d="M16 40 C14 30 7 24 3 26 C10 24 13 32 16 40 Z" fill="url(#g2)"/><path d="M16 40 C15 28 16 18 17 22 C18 20 17 30 16 40 Z" fill="url(#g2)"/><path d="M16 40 C18 30 25 24 29 27 C22 25 19 32 16 40 Z" fill="url(#g2)"/>
+<path d="M48 40 C46 30 39 24 35 27 C42 24 45 32 48 40 Z" fill="url(#g1)"/><path d="M48 40 C47 28 48 18 49 23 C50 20 49 30 48 40 Z" fill="url(#g1)"/><path d="M48 40 C50 30 57 24 61 28 C54 25 51 32 48 40 Z" fill="url(#g1)"/>
+<path d="M80 40 C78 30 71 24 67 28 C74 24 77 32 80 40 Z" fill="url(#g1)"/><path d="M80 40 C79 28 80 18 81 24 C82 20 81 30 80 40 Z" fill="url(#g1)"/><path d="M80 40 C82 30 89 24 93 29 C86 25 83 32 80 40 Z" fill="url(#g1)"/>
+<path d="M112 40 C110 30 103 24 99 29 C106 24 109 32 112 40 Z" fill="url(#g2)"/><path d="M112 40 C111 28 112 18 113 25 C114 20 113 30 112 40 Z" fill="url(#g2)"/><path d="M112 40 C114 30 121 24 125 30 C118 25 115 32 112 40 Z" fill="url(#g2)"/>
+<path d="M144 40 C142 30 135 24 131 30 C138 24 141 32 144 40 Z" fill="url(#g1)"/><path d="M144 40 C143 28 144 18 145 26 C146 20 145 30 144 40 Z" fill="url(#g1)"/><path d="M144 40 C146 30 153 24 157 30 C150 25 147 32 144 40 Z" fill="url(#g1)"/>
+<path d="M176 40 C174 30 167 24 163 24 C170 24 173 32 176 40 Z" fill="url(#g1)"/><path d="M176 40 C175 28 176 18 177 18 C178 20 177 30 176 40 Z" fill="url(#g1)"/><path d="M176 40 C178 30 185 24 189 25 C182 25 179 32 176 40 Z" fill="url(#g1)"/>
+<path d="M208 40 C206 30 199 24 195 24 C202 24 205 32 208 40 Z" fill="url(#g2)"/><path d="M208 40 C207 28 208 18 209 19 C210 20 209 30 208 40 Z" fill="url(#g2)"/><path d="M208 40 C210 30 217 24 221 25 C214 25 211 32 208 40 Z" fill="url(#g2)"/>
+<path d="M240 40 C238 30 231 24 227 25 C234 24 237 32 240 40 Z" fill="url(#g1)"/><path d="M240 40 C239 28 240 18 241 20 C242 20 241 30 240 40 Z" fill="url(#g1)"/><path d="M240 40 C242 30 249 24 253 26 C246 25 243 32 240 40 Z" fill="url(#g1)"/>
+<path d="M272 40 C270 30 263 24 259 26 C266 24 269 32 272 40 Z" fill="url(#g1)"/><path d="M272 40 C271 28 272 18 273 21 C274 20 273 30 272 40 Z" fill="url(#g1)"/><path d="M272 40 C274 30 281 24 285 27 C278 25 275 32 272 40 Z" fill="url(#g1)"/>
+<path d="M304 40 C302 30 295 24 291 26 C298 24 301 32 304 40 Z" fill="url(#g2)"/><path d="M304 40 C303 28 304 18 305 22 C306 20 305 30 304 40 Z" fill="url(#g2)"/><path d="M304 40 C306 30 313 24 317 27 C310 25 307 32 304 40 Z" fill="url(#g2)"/>
+<path d="M336 40 C334 30 327 24 323 27 C330 24 333 32 336 40 Z" fill="url(#g1)"/><path d="M336 40 C335 28 336 18 337 23 C338 20 337 30 336 40 Z" fill="url(#g1)"/><path d="M336 40 C338 30 345 24 349 28 C342 25 339 32 336 40 Z" fill="url(#g1)"/>
+<path d="M368 40 C366 30 359 24 355 28 C362 24 365 32 368 40 Z" fill="url(#g1)"/><path d="M368 40 C367 28 368 18 369 24 C370 20 369 30 368 40 Z" fill="url(#g1)"/><path d="M368 40 C370 30 377 24 381 29 C374 25 371 32 368 40 Z" fill="url(#g1)"/>
+
+</svg>

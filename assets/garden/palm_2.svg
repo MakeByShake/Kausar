@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 180">
+<defs>
+<linearGradient id="lf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9BF27F"/><stop offset="1" stop-color="#1F8F3A"/></linearGradient>
+<linearGradient id="lf2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B6F7A0"/><stop offset="1" stop-color="#2E9E44"/></linearGradient>
+<linearGradient id="tr" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#C98E55"/><stop offset="1" stop-color="#5E3417"/></linearGradient>
+<radialGradient id="dt" cx="0.38" cy="0.32" r="0.8"><stop offset="0" stop-color="#E07A48"/><stop offset=".55" stop-color="#8B3A1E"/><stop offset="1" stop-color="#5E2410"/></radialGradient>
+</defs>
+<ellipse cx="80" cy="172" rx="40" ry="12.0" fill="#000" opacity="0.16"/>
+<path d="M72 172 Q78 130 86 104 L98 104 Q92 130 92 172 Z" fill="url(#tr)"/>
+<path d="M74 164 q8 -3 16 0" stroke="#5E3417" stroke-width="2.5" opacity=".45" fill="none" stroke-linecap="round"/><path d="M77 150 q8 -3 16 0" stroke="#5E3417" stroke-width="2.5" opacity=".45" fill="none" stroke-linecap="round"/><path d="M79 136 q8 -3 16 0" stroke="#5E3417" stroke-width="2.5" opacity=".45" fill="none" stroke-linecap="round"/><path d="M82 122 q8 -3 16 0" stroke="#5E3417" stroke-width="2.5" opacity=".45" fill="none" stroke-linecap="round"/><path d="M92 104 Q57.2 92.4 37.5 98.7 Q67.6 83.5 92 104 Z" fill="url(#lf2)"/><path d="M92 104 Q62.4 88.0 37.5 98.7" stroke="#fff" stroke-opacity=".3" stroke-width="2" fill="none"/>
+<path d="M92 104 Q65.3 70.1 63.0 68.3 Q86.5 72.6 92 104 Z" fill="url(#lf)"/><path d="M92 104 Q75.9 71.3 63.0 68.3" stroke="#fff" stroke-opacity=".3" stroke-width="2" fill="none"/>
+<path d="M92 104 Q88.9 57.7 107.0 62.5 Q110.3 77.9 92 104 Z" fill="url(#lf2)"/><path d="M92 104 Q99.6 67.8 107.0 62.5" stroke="#fff" stroke-opacity=".3" stroke-width="2" fill="none"/>
+<path d="M92 104 Q114.3 65.7 142.2 89.5 Q123.4 98.5 92 104 Z" fill="url(#lf)"/><path d="M92 104 Q118.9 82.1 142.2 89.5" stroke="#fff" stroke-opacity=".3" stroke-width="2" fill="none"/>
+<path d="M92 104 Q125.6 83.4 149.8 123.6 Q120.9 117.5 92 104 Z" fill="url(#lf2)"/><path d="M92 104 Q123.3 100.4 149.8 123.6" stroke="#fff" stroke-opacity=".3" stroke-width="2" fill="none"/>
+<circle cx="92" cy="104" r="7" fill="url(#dt)"/>
+
+</svg>

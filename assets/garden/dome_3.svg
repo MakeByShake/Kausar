@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240">
+<defs>
+<linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFBF0"/><stop offset="1" stop-color="#E6D3AE"/></linearGradient>
+<linearGradient id="wall2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3E6C8"/><stop offset="1" stop-color="#C4A77B"/></linearGradient>
+<radialGradient id="dome" cx="0.35" cy="0.25" r="0.8"><stop offset="0" stop-color="#FFF3B0"/><stop offset=".55" stop-color="#FFC23F"/><stop offset="1" stop-color="#D08A00"/></radialGradient>
+<linearGradient id="win" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7C8CE6"/><stop offset="1" stop-color="#3F4FA8"/></linearGradient>
+<radialGradient id="gold" cx="0.38" cy="0.32" r="0.8"><stop offset="0" stop-color="#FFF3B0"/><stop offset=".55" stop-color="#FFC23F"/><stop offset="1" stop-color="#D08A00"/></radialGradient>
+</defs>
+<ellipse cx="160" cy="232" rx="156" ry="12" fill="#000" opacity="0.16"/>
+<rect x="12" y="40" width="24" height="190" rx="8" fill="url(#wall)"/><rect x="15" y="46" width="5" height="170" rx="2.5" fill="#fff" opacity=".5"/><ellipse cx="24" cy="40" rx="16" ry="6" fill="url(#wall2)"/><circle cx="24" cy="30" r="14" fill="url(#dome)"/>
+<rect x="22" y="8" width="4" height="12" rx="2" fill="url(#gold)"/><circle cx="24" cy="6" r="4" fill="url(#gold)"/>
+<rect x="284" y="40" width="24" height="190" rx="8" fill="url(#wall)"/><rect x="287" y="46" width="5" height="170" rx="2.5" fill="#fff" opacity=".5"/><ellipse cx="296" cy="40" rx="16" ry="6" fill="url(#wall2)"/><circle cx="296" cy="30" r="14" fill="url(#dome)"/>
+<rect x="294" y="8" width="4" height="12" rx="2" fill="url(#gold)"/><circle cx="296" cy="6" r="4" fill="url(#gold)"/>
+<rect x="40" y="130" width="240" height="100" rx="6" fill="url(#wall)"/>
+<rect x="40" y="130" width="240" height="10" rx="4" fill="#fff" opacity=".6"/>
+<rect x="28" y="222" width="264" height="12" rx="5" fill="url(#wall2)"/>
+<rect x="70" y="118" width="180" height="16" rx="4" fill="url(#wall2)"/>
+<path d="M80 122 A80 80 0 0 1 240 122 Z" fill="url(#dome)"/>
+<path d="M100 100 A60 60 0 0 1 160 44" stroke="#fff" stroke-opacity=".45" stroke-width="7" fill="none" stroke-linecap="round"/>
+<rect x="156" y="22" width="8" height="24" rx="3" fill="url(#gold)"/>
+<circle cx="160" cy="18" r="10" fill="url(#gold)"/>
+<ellipse cx="157" cy="15" rx="3.5" ry="2" fill="#fff" opacity="0.7" transform="rotate(-30 157 15)"/>
+<path d="M82 222 V178 A18 18 0 0 1 118 178 V222 Z" fill="url(#win)"/><path d="M86 222 V180 A14 14 0 0 1 114 180 V222 Z" fill="#1E2A78" opacity=".35"/><path d="M142 222 V178 A18 18 0 0 1 178 178 V222 Z" fill="url(#win)"/><path d="M146 222 V180 A14 14 0 0 1 174 180 V222 Z" fill="#1E2A78" opacity=".35"/><path d="M202 222 V178 A18 18 0 0 1 238 178 V222 Z" fill="url(#win)"/><path d="M206 222 V180 A14 14 0 0 1 234 180 V222 Z" fill="#1E2A78" opacity=".35"/><rect x="48" y="112" width="8" height="18" rx="3" fill="url(#wall2)"/><rect x="72" y="112" width="8" height="18" rx="3" fill="url(#wall2)"/><rect x="96" y="112" width="8" height="18" rx="3" fill="url(#wall2)"/><rect x="120" y="112" width="8" height="18" rx="3" fill="url(#wall2)"/><rect x="144" y="112" width="8" height="18" rx="3" fill="url(#wall2)"/><rect x="168" y="112" width="8" height="18" rx="3" fill="url(#wall2)"/><rect x="192" y="112" width="8" height="18" rx="3" fill="url(#wall2)"/><rect x="216" y="112" width="8" height="18" rx="3" fill="url(#wall2)"/><rect x="240" y="112" width="8" height="18" rx="3" fill="url(#wall2)"/><rect x="264" y="112" width="8" height="18" rx="3" fill="url(#wall2)"/><path d="M142 222 V190 A18 18 0 0 1 178 190 V222 Z" fill="url(#gold)"/>
+
+</svg>
