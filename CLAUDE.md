@@ -48,7 +48,7 @@ lib/
 assets/garden/              — SVG-спрайты (свои рисунки): <kind>_2/_3, sprout, foundation, hills, cloud, sun, moon
 test/tap_guard_test.dart, test/sprites_test.dart
 tools/gen_sprites.py        — генератор SVG-спрайтов (python3 -I tools/gen_sprites.py assets/garden)
-docs/                       — план, дизайн-бриф, список на проверку устазу, screenshots/
+docs/                       — tz.md (полное ТЗ для разработчика), дизайн-бриф, recraft-prompts, content-review, screenshots/
 ```
 
 ## Как запускать
